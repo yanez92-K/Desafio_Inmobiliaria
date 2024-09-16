@@ -150,11 +150,11 @@ function renderProperties(properties, containerID) {
       <div class="col-md-4 mb-4">
         <div class="card">
             <img src="${property.src}" alt="${property.nombre}">
-            <h3>${property.nombre}</h3>
-            <p>${property.descripcion}</p>
-            <p>Ubicación: ${property.ubicacion}</p>
-            <p>Habitaciones: ${property.habitaciones}</p>
-            <p>Precio: $${property.costo}</p>
+            <h2>${property.nombre}</h2>
+            <p><strong>${property.descripcion}</strong></p>
+            <p><strong>Ubicación:</strong> ${property.ubicacion}</p>
+            <p><strong>Habitaciones:</strong> ${property.habitaciones}</p>
+            <p><strong>Costo:</strong> ${property.costo}</p>
             <p class="${property.smoke ? "text-success" : "text-danger"}">
                 <i class="fas ${
                   property.smoke ? "fa-smoking" : "fa-smoking-ban"
